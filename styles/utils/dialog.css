@@ -1,0 +1,52 @@
+.dialog-container {
+  display: none;
+  z-index: 20;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 20;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.dialog-container.is-open {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dialog {
+  z-index: 30;
+  background-color: var(--white);
+  padding: 2rem;
+  max-width: 600px;
+}
+
+.dialog-content {
+  padding: 0 0 2rem;
+}
+
+.dialog-actions {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  gap: 1.5rem;
+}
+
+.dialog-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--black);
+  opacity: 0.7;
+  display: none;
+}
+
+.dialog-container.is-open .dialog-backdrop {
+  display: block;
+}

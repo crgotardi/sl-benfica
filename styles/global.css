@@ -1,0 +1,7 @@
+/* utils */
+@import url('./utils/normalize.css');
+@import url('./utils/colors.css');
+
+/* components */
+@import url('./components/menu.css');
+@import url('./components/main.css');

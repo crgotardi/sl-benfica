@@ -1,0 +1,15 @@
+/* colors */
+:root {
+  --white: #fff;
+  --black: #000;
+  --primary: #C40002;
+  --primary-hover: #941E16;
+  --paper: #F2F2F2;
+  --border: #989898;
+  --input: #707070;
+}
+
+.background-primary {
+  background-color: var(--primary);
+}
+/* colors */

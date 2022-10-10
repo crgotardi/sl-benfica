@@ -1,0 +1,46 @@
+@import url('./buttons.css');
+
+form {
+  border: 1px solid var(--border);
+  background-color: var(--paper);
+}
+
+form .form-control {
+  margin: 4px 0 16px;
+}
+
+form .form-actions {
+  margin: 16px 0 0;
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.25rem;
+}
+
+form .required-symbol {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--primary);
+}
+
+label {
+  display: block;
+  font-size: 1.25rem;
+}
+
+select, input[type="text"], input[type="number"] {
+  display: inline-flex;
+  padding: 10px;
+  font-size: 1.25rem;
+}
+
+form .error-message {
+  color: var(--primary);
+  font-size: 1rem;
+  position: relative;
+  display: block;
+  top: -12px;
+}
+
+form .error {
+  border: 1px solid var(--primary);
+}

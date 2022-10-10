@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SL Benfica - Registro de golos</title>
+  <link href="https://cdn.jsdelivr.net/npm/segoe-fonts@1.0.1/segoe-fonts.min.css" rel="stylesheet">
+  <link type="text/css" rel="stylesheet" href="./styles/utils/colors.css"></link>
+  <link type="text/css" rel="stylesheet" href="./styles/global.css"></link>
+</head>
+<body>
+  <menu class="display-flex space-between align-center width-100">
+    <img src="assets/img/logo-sl-benfica.svg" alt="Escudo do SL Benfica" />
+    <input id="menu-hamburguer" type="checkbox" />
+    <label for="menu-hamburguer">
+      <div class="menu">
+        <span class="hamburguer"></span>
+      </div>
+    </label>
+    <ul class="menu-list is-hidden">
+      <li>Página 1</li>
+      <li>Página 2</li>
+      <li>Página 3</li>
+    </ul>
+  </menu>
+
+  <main class="padding-3">
+    <header>
+      <h1>Registro de golos do SL Benfica</h1>
+    </header>
+    <aside>
+      <form class="padding-3">
+        <div class="form-group">
+          <h2>Adicionar golos</h2>
+        </div>
+        <div id="add-goal-form" class="form-group">
+          <label for="team" class="form-label">
+            Equipa adversária
+            <span class="required-symbol">*</span> 
+          </label>
+          <select name="team" id="team" class="form-control width-100">
+            <option value="Manchester City">Manchester City</option>
+            <option value="Sporting CP">Sporting CP</option>
+            <option value="Barcelona">Barcelona</option>
+            <option value="Liverpool">Liverpool</option>
+          </select>     
+        </div>
+        <div class="form-group">
+          <label for="player" class="form-label">
+            Jogador que marcou
+            <span class="required-symbol">*</span> 
+          </label>
+          <input type="text" name="player" id="player" class="form-control width-100" />
+        </div>
+        <div class="form-group">
+          <label for="goals" class="form-label">
+            Número de golos
+            <span class="required-symbol">*</span> 
+          </label>
+          <input type="number" name="goals" min="1" id="goals" class="form-control width-25" />
+        </div>
+        <div class="form-actions">
+          <span class="caption">
+            <span class="required-symbol">*</span> 
+            Campos obrigatórios
+          </span>
+          <input type="button" value="Inserir" id="add-action" class="primary-button" />
+        </div>
+      </form>
+    </aside>
+
+    <section>
+      <article class="padding-3">
+        <h2>Lista de golos</h2>
+        <div class="grid-container goal-list">
+          <div class="grid-header">
+            <span>Adversário</span>
+          </div>
+          <div class="grid-header">
+            <span>Marcador</span>
+          </div>
+          <div class="grid-header text-center">
+            <span>Golos</span>
+          </div>
+          <div class="grid-header"></div> 
+          <div class="grid-footer strong-item">
+            <span>Total</span>
+          </div>
+          <div class="grid-footer"></div>
+          <div id="total-goals" class="grid-footer strong-item text-center">
+            <span></span>
+          </div>
+          <div class="grid-footer"></div>
+        </div>
+      </article>
+    </section>
+  </main>
+  <footer></footer>
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>
